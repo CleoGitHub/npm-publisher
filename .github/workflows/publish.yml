@@ -95,7 +95,7 @@ jobs:
           echo $ORGINAL_PACKAGE_NAME
           echo $PACKAGE_NAME
           sed -i -e "s|\"name\": \"$ORGINAL_PACKAGE_NAME\"|\"name\": \"$PACKAGE_NAME\"|g" package.json
-          sed -i -e "s|\"name\": \"$ORGINAL_PACKAGE_NAME\"|\"name\": \"$PACKAGE_NAME\"|g" package-lock.json
+          # sed -i -e "s|\"name\": \"$ORGINAL_PACKAGE_NAME\"|\"name\": \"$PACKAGE_NAME\"|g" package-lock.json
 
           npm publish --access public
 
